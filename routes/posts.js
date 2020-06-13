@@ -2,7 +2,6 @@ if (process.env.NODE_ENV !== "production") require("dotenv").config();
 
 const postsRouter = require("express").Router();
 const pool = require("../db");
-const bcrypt = require("bcrypt");
 
 const {
   checkApiKey,
