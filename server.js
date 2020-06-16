@@ -3,8 +3,6 @@ if (process.env.NODE_ENV !== "production") require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
 
-console.log("process.env", process.env);
-
 const usersRouter = require("./routes/users");
 const postsRouter = require("./routes/posts");
 
