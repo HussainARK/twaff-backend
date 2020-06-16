@@ -8,5 +8,6 @@ const checkApiKey = (req, res, next) => {
 
 const serverErrorMessage = "Server Error, We're trying to solve the Problem";
 const invalidApiKeyMessage = "Invalid API Key";
+const userNotFoundMessage = "The User is not found";
 
-module.exports = { checkApiKey, serverErrorMessage, invalidApiKeyMessage };
+module.exports = { checkApiKey, serverErrorMessage, invalidApiKeyMessage, userNotFoundMessage };

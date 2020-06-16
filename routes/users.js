@@ -8,11 +8,11 @@ const {
   checkApiKey,
   serverErrorMessage,
   invalidApiKeyMessage,
+  userNotFoundMessage
 } = require("../vars");
 
 let currentUser = null;
 
-const userNotFoundMessage = "The User is not found";
 const userCreatedSuccessfulyMessage = "The User is created successfuly";
 const userEditedMessage = "The User is Edited Successfuly";
 const userDeletedMessage = "The User is Deleted";
