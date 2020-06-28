@@ -107,7 +107,7 @@ postsRouter.patch("/:id", getPostById, async (req, res) => {
 postsRouter.delete("/:id", getPostById, async (req, res) => {
   if (req.headers.authorization === process.env.API_KEY) {
     try {
-      await pool.query("DELETE FROM posts WHERE id=$1", [currentPost.id]);
+      await pool.query("DELETE FROM posts WHERE postid=$1", [currentPost.id]);
       return res.json({ message: postDeletedMessage });
     } catch (err) {
       res.status(500).json({ message: serverErrorMessage });
