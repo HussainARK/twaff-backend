@@ -21,7 +21,7 @@ const getPostById = async (req, res, next) => {
   try {
     if (selectedPostId != null) {
       let post = await (
-        await pool.query("SELECT * FROM posts WHERE id=$1;", [selectedPostId])
+        await pool.query("SELECT * FROM posts WHERE postid=$1;", [selectedPostId])
       ).rows[0];
       currentPost = post;
 
